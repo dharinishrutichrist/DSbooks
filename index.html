@@ -73,6 +73,20 @@
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
+        .summary-btn {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            background: #5E07D1;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .summary-btn:hover {
+            background: #4A05A8;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +103,12 @@
     <div class="container" id="summaries">
         <section>
             <h2>Featured Summaries</h2>
-            <article>
+            <a href="#power-of-habit" class="summary-btn">The Power of Habit</a>
+            <a href="#atomic-habits" class="summary-btn">Atomic Habits</a>
+            <a href="#thinking-fast-and-slow" class="summary-btn">Thinking, Fast and Slow</a>
+            <a href="#rich-dad-poor-dad" class="summary-btn">Rich Dad, Poor Dad</a>
+
+            <article id="power-of-habit">
                 <h3>The Power of Habit</h3>
                 <h4>Abstract</h4>
                 <p>This book explores the science behind habits, how they are formed, and how they can be changed to improve personal and professional lives.</p>
@@ -102,7 +121,8 @@
                     <li>Keystone habits create ripple effects across different areas of life.</li>
                 </ul>
             </article>
-            <article>
+            
+            <article id="atomic-habits">
                 <h3>Atomic Habits</h3>
                 <h4>Abstract</h4>
                 <p>James Clear provides a practical framework for forming good habits, breaking bad ones, and mastering tiny behaviors that lead to remarkable results.</p>
@@ -115,7 +135,8 @@
                     <li>Identity-based habits help reinforce long-term behavior change.</li>
                 </ul>
             </article>
-            <article>
+            
+            <article id="thinking-fast-and-slow">
                 <h3>Thinking, Fast and Slow</h3>
                 <h4>Abstract</h4>
                 <p>Daniel Kahneman explores two modes of thinking: fast, intuitive thinking and slow, deliberate thinking, and how they shape our decisions.</p>
@@ -128,7 +149,8 @@
                     <li>Awareness of cognitive biases can lead to better decision-making.</li>
                 </ul>
             </article>
-            <article>
+            
+            <article id="rich-dad-poor-dad">
                 <h3>Rich Dad, Poor Dad</h3>
                 <h4>Abstract</h4>
                 <p>Robert Kiyosaki contrasts the financial philosophies of his "Rich Dad" and "Poor Dad" to illustrate key principles of wealth-building.</p>
@@ -139,3 +161,9 @@
                     <li>Assets put money in your pocket; liabilities take money out.</li>
                     <li>Financial education is crucial for long-term wealth.</li>
                     <li>Working for money vs. making money work for you.</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
