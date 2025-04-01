@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books in Minutes by DS | Read, Learn, Grow</title>
+    <title>Books in Minutes by DS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -31,90 +31,82 @@
             text-decoration: none;
             margin-left: 20px;
         }
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: url('books-background.jpg') no-repeat center center/cover;
-            color: white;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .hero h2 {
-            font-size: 1.5em;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #5E07D1;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin-top: 20px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: #4A05A8;
-        }
         .container {
             max-width: 900px;
-            margin: 80px auto;
+            margin: 100px auto;
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        h2 {
+        h1 {
             color: #5E07D1;
-            border-bottom: 2px solid #5E07D1;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .book-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .book-item {
+            padding: 15px;
+            background-color: #5E07D1;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .book-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .book-item a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #5E07D1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #4A05A8;
         }
     </style>
 </head>
 <body>
+
     <nav class="navbar">
         <h3>Books in Minutes by DS</h3>
         <div>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
             <a href="books.html">Books</a>
         </div>
     </nav>
-    
-    <section class="hero">
-        <h1>Welcome to Books in Minutes by DS</h1>
-        <h2>Read, Learn, and Grow with Powerful Insights</h2>
-        <a href="books.html" class="btn">Explore Summaries</a>
-    </section>
 
     <div class="container">
-        <h2>Popular Book Summaries</h2>
+        <h1>Welcome to Books in Minutes!</h1>
+
         <div class="book-list">
             <div class="book-item">
-                <h3>The 7 Habits of Highly Effective People</h3>
-                <p>By Stephen R. Covey</p>
-                <a href="book1.html" class="btn">Read Summary</a>
+                <a href="book1.html">The 7 Habits of Highly Effective People</a>
             </div>
             <div class="book-item">
-                <h3>Atomic Habits</h3>
-                <p>By James Clear</p>
-                <a href="book2.html" class="btn">Read Summary</a>
+                <a href="book2.html">Atomic Habits</a>
             </div>
             <div class="book-item">
-                <h3>The Power of Now</h3>
-                <p>By Eckhart Tolle</p>
-                <a href="book3.html" class="btn">Read Summary</a>
+                <a href="book3.html">The Power of Now</a>
             </div>
         </div>
+
+        <a href="books.html" class="btn">Back to Book List</a>
     </div>
+
 </body>
 </html>
